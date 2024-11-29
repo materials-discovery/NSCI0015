@@ -1,0 +1,21 @@
+# Import necessary libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Input data
+measurements = [5.02, 5.05, 5.03, 5.07, 5.04, 5.06, 5.01, 5.05, 5.00, 5.08]
+
+# Calculate statistics
+mean_value = np.mean(measurements)
+std_deviation = np.std(measurements)
+
+# Print results
+print("Mean weight:", mean_value)
+print("Standard deviation:", std_deviation)
+
+# Visualize data
+plt.hist(measurements, bins=5, edgecolor='black')
+plt.title('Distribution of Measurements')
+plt.xlabel('Weight (g)')
+plt.ylabel('Frequency')
+plt.show()
